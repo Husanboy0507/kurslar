@@ -63,14 +63,16 @@ img {
 
 .img__content { 
     padding: 4rem 0;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;  
+    align-items: center;
+    justify-content: center;
 }
 .img__content .item{
     padding: 1rem 1rem;
     border-radius: 10px;
+    width: 300px;
     background-color: rgb(78, 85, 90);
 }
 .img__content .item button{
@@ -83,16 +85,16 @@ img {
 .img__content .item  p{
     font-size: 1.4rem;
     font-weight: 900;
-    padding-right:7rem ;
+   
 }
 .img__content .item  h2{
     font-size: 1.4rem;
-    padding-left: 7.4rem;
+  
 }
 .img__content .item .flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
    padding-top: 2rem;
    padding-bottom: 1rem;
    border-bottom: 2px solid wheat;
